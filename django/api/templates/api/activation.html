@@ -1,0 +1,22 @@
+{% block subject %}
+    仮登録完了のお知らせ
+{% endblock subject %}
+
+{% block text_body %}
+    {{ name }}様
+
+    Study Reviewにご登録いただき、ありがとうございます。
+    仮登録が完了致しました。
+
+    まだ本登録は完了しておりませんので、以下のリンクから本登録をお願い致します。
+    {{ protocol }}://{{ domain }}/{{ url|safe }}
+
+    -=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=-
+    Study Review
+    メールアドレス: StudyReview.info@gmail.com
+    Twitter: https://twitter.com/studyreviewinfo
+    お問い合わせフォーム: https://forms.gle/a7jUXDLhyfi4ZAWQ9
+    -=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=-
+
+
+{% endblock text_body %}

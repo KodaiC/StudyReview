@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+gunicorn = "*"
+djangorestframework = "*"
+django-cors-headers = "*"
+whitenoise = "*"
+django-environ = "*"
+django-filter = "*"
+djangorestframework-simplejwt = "*"
+psycopg2-binary = "*"
+tzdata = "*"
+rules = "*"
+pillow = "*"
+django-cleanup = "*"
+django-resized = "*"
+isodate = "*"
+requests = "*"
+djoser = {path = "./djoser"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

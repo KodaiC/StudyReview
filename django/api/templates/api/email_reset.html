@@ -1,0 +1,24 @@
+{% block subject %}
+    メールアドレス変更のご案内
+{% endblock subject %}
+
+{% block text_body %}
+    {{ name }}様
+
+    Study Reviewをご利用いただき、ありがとうございます。
+    メールアドレス変更を受け付けました。
+
+    以下のリンクからメールアドレス変更を行うことができます。
+    {{ protocol }}://{{ domain }}/{{ url }}
+
+    心当たりがない場合はリンクにアクセスせず、下記の連絡先までご連絡ください。
+
+    -=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=-
+    Study Review
+    メールアドレス: StudyReview.info@gmail.com
+    Twitter: https://twitter.com/studyreviewinfo
+    お問い合わせフォーム: https://forms.gle/a7jUXDLhyfi4ZAWQ9
+    -=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=--=-=-
+
+
+{% endblock text_body %}
